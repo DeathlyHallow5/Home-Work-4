@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "head head head"   
+                         "nav main aside"
+                         "footer footer footer";
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 100px 1fr;
+    height: 100vh;
+    gap: 10px;
+}
+header {
+    grid-area: head;
+    background-color: rgba(228, 46, 1, 0.836);
+    font-size: 30px;
+}
+nav {
+    grid-area: nav;
+    background-color: gold;
+    font-size: 30px;
+}
+main {
+    grid-area: main;
+    background-color: greenyellow;
+    font-size: 30px;
+}
+aside {
+    width: 200px;
+    grid-area: aside;
+    background-color: hotpink;
+    font-size: 30px;
+}
+footer {
+    height: 100px;
+    grid-area: footer;
+    background-color: indigo;
+    font-size: 30px;
+}
